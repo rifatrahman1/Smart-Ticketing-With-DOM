@@ -191,7 +191,7 @@
                             </div>
                             <button
                                 class="flex items-center text-[18px] font-inter font-medium text-[#1DD100] gap-2 bg-[#1DD10026] rounded-xl py-4 px-4"><img
-                                    src="./images/seat-green.png" alt=""> <span>40 Seats left</span></button>
+                                    src="./images/seat-green.png" alt=""> <span id="total_seat">40</span> <span>Seats left</span></button>
                         </div>
                         <div class="bg-[#F7F8F8] rounded-3xl px-8 py-8 mt-6">
                             <div class="flex items-center justify-between font-raleway">
@@ -227,7 +227,7 @@
                         <div class="flex flex-col items-center">
                             <img src="./images/fare.png" alt="">
                             <div class="font-raleway mt-7">
-                                <h1 class="text-[#030712] text-2xl font-bold">550 Taka</h1>
+                                <h1 class="text-[#030712] text-2xl font-bold"><span id="ticket_amount">550</span> Taka</h1>
                                 <p class="text-[#03071299] text-2xl font-semibold mt-2">Per Seat</p>
                             </div>
                         </div>
@@ -273,131 +273,131 @@
                             <!-- row 1 -->
                             <p class="col-span-1 text-[18px] font-medium text-[#03071280]">A</p>
                             <div class="col-span-11 grid grid-cols-10 gap-16 items-center text-center">
-                                <button id=""
+                                <button onclick="showSeat(this)"
                                     class="col-span-2 btn btn-md hover:bg-neutral-500 hover:text-white transition-colors duration-200 ease-in-out bg-[#0307121A] flex items-center justify-center rounded-xl px-16 py-4 text-[18px] font-medium text-[#03071280]">A1</button>
-                                <button
+                                <button onclick="showSeat(this)"
                                     class="col-span-2 btn btn-md hover:bg-neutral-500 hover:text-white transition-colors duration-200 ease-in-out bg-[#0307121A] flex items-center justify-center rounded-xl px-16 py-4 text-[18px] font-medium text-[#03071280]">A2</button>
                                 <p class="col-span-1"></p>
-                                <button
+                                <button onclick="showSeat(this)"
                                     class="col-span-2 btn  hover:bg-neutral-500 hover:text-white transition-colors duration-200 ease-in-out bg-[#0307121A] flex items-center justify-center rounded-xl px-16 py-4 text-[18px] font-medium text-[#03071280]">A3</button>
-                                <button
+                                <button onclick="showSeat(this)"
                                     class="col-span-2 btn btn-md hover:bg-neutral-500 hover:text-white transition-colors duration-200 ease-in-out bg-[#0307121A] flex items-center justify-center rounded-xl px-16 py-4 text-[18px] font-medium text-[#03071280]">A4</button>
                             </div>
                             <!-- row 2 -->
                             <p class="col-span-1 text-[18px] font-medium text-[#03071280]">B</p>
                             <div class="col-span-11 grid grid-cols-10 gap-16 items-center text-center">
-                                <button
+                                <button onclick="showSeat(this)"
                                     class="col-span-2 btn btn-md hover:bg-neutral-500 hover:text-white transition-colors duration-200 ease-in-out bg-[#0307121A] flex items-center justify-center rounded-xl px-16 py-4 text-[18px] font-medium text-[#03071280]">B1</button>
-                                <button
+                                <button onclick="showSeat(this)"
                                     class="col-span-2 btn btn-md hover:bg-neutral-500 hover:text-white transition-colors duration-200 ease-in-out bg-[#0307121A] flex items-center justify-center rounded-xl px-16 py-4 text-[18px] font-medium text-[#03071280]">B2</button>
                                 <p class="col-span-1"></p>
-                                <button
+                                <button onclick="showSeat(this)"
                                     class="col-span-2 btn  hover:bg-neutral-500 hover:text-white transition-colors duration-200 ease-in-out bg-[#0307121A] flex items-center justify-center rounded-xl px-16 py-4 text-[18px] font-medium text-[#03071280]">B3</button>
-                                <button
+                                <button onclick="showSeat(this)"
                                     class="col-span-2 btn btn-md hover:bg-neutral-500 hover:text-white transition-colors duration-200 ease-in-out bg-[#0307121A] flex items-center justify-center rounded-xl px-16 py-4 text-[18px] font-medium text-[#03071280]">B4</button>
                             </div>
                             <!-- row 3 -->
                             <p class="col-span-1 text-[18px] font-medium text-[#03071280]">C</p>
                             <div class="col-span-11 grid grid-cols-10 gap-16 items-center text-center">
-                                <button
+                                <button onclick="showSeat(this)"
                                     class="col-span-2 btn btn-md hover:bg-neutral-500 hover:text-white transition-colors duration-200 ease-in-out bg-[#0307121A] flex items-center justify-center rounded-xl px-16 py-4 text-[18px] font-medium text-[#03071280]">C1</button>
-                                <button
+                                <button onclick="showSeat(this)"
                                     class="col-span-2 btn btn-md hover:bg-neutral-500 hover:text-white transition-colors duration-200 ease-in-out bg-[#0307121A] flex items-center justify-center rounded-xl px-16 py-4 text-[18px] font-medium text-[#03071280]">C2</button>
                                 <p class="col-span-1"></p>
-                                <button
+                                <button onclick="showSeat(this)"
                                     class="col-span-2 btn  hover:bg-neutral-500 hover:text-white transition-colors duration-200 ease-in-out bg-[#0307121A] flex items-center justify-center rounded-xl px-16 py-4 text-[18px] font-medium text-[#03071280]">C3</button>
-                                <button
+                                <button onclick="showSeat(this)"
                                     class="col-span-2 btn btn-md hover:bg-neutral-500 hover:text-white transition-colors duration-200 ease-in-out bg-[#0307121A] flex items-center justify-center rounded-xl px-16 py-4 text-[18px] font-medium text-[#03071280]">C4</button>
                             </div>
                             <!-- row 4 -->
                             <p class="col-span-1 text-[18px] font-medium text-[#03071280]">D</p>
                             <div class="col-span-11 grid grid-cols-10 gap-16 items-center text-center">
-                                <button
+                                <button onclick="showSeat(this)"
                                     class="col-span-2 btn btn-md hover:bg-neutral-500 hover:text-white transition-colors duration-200 ease-in-out bg-[#0307121A] flex items-center justify-center rounded-xl px-16 py-4 text-[18px] font-medium text-[#03071280]">D1</button>
-                                <button
+                                <button onclick="showSeat(this)"
                                     class="col-span-2 btn btn-md hover:bg-neutral-500 hover:text-white transition-colors duration-200 ease-in-out bg-[#0307121A] flex items-center justify-center rounded-xl px-16 py-4 text-[18px] font-medium text-[#03071280]">D2</button>
                                 <p class="col-span-1"></p>
-                                <button
+                                <button onclick="showSeat(this)"
                                     class="col-span-2 btn  hover:bg-neutral-500 hover:text-white transition-colors duration-200 ease-in-out bg-[#0307121A] flex items-center justify-center rounded-xl px-16 py-4 text-[18px] font-medium text-[#03071280]">D3</button>
-                                <button
+                                <button onclick="showSeat(this)"
                                     class="col-span-2 btn btn-md hover:bg-neutral-500 hover:text-white transition-colors duration-200 ease-in-out bg-[#0307121A] flex items-center justify-center rounded-xl px-16 py-4 text-[18px] font-medium text-[#03071280]">D4</button>
                             </div>
                             <!-- row 5 -->
                             <p class="col-span-1 text-[18px] font-medium text-[#03071280]">E</p>
                             <div class="col-span-11 grid grid-cols-10 gap-16 items-center text-center">
-                                <button
+                                <button onclick="showSeat(this)"
                                     class="col-span-2 btn btn-md hover:bg-neutral-500 hover:text-white transition-colors duration-200 ease-in-out bg-[#0307121A] flex items-center justify-center rounded-xl px-16 py-4 text-[18px] font-medium text-[#03071280]">E1</button>
-                                <button
+                                <button onclick="showSeat(this)"
                                     class="col-span-2 btn btn-md hover:bg-neutral-500 hover:text-white transition-colors duration-200 ease-in-out bg-[#0307121A] flex items-center justify-center rounded-xl px-16 py-4 text-[18px] font-medium text-[#03071280]">E2</button>
                                 <p class="col-span-1"></p>
-                                <button
+                                <button onclick="showSeat(this)"
                                     class="col-span-2 btn  hover:bg-neutral-500 hover:text-white transition-colors duration-200 ease-in-out bg-[#0307121A] flex items-center justify-center rounded-xl px-16 py-4 text-[18px] font-medium text-[#03071280]">E3</button>
-                                <button
+                                <button onclick="showSeat(this)"
                                     class="col-span-2 btn btn-md hover:bg-neutral-500 hover:text-white transition-colors duration-200 ease-in-out bg-[#0307121A] flex items-center justify-center rounded-xl px-16 py-4 text-[18px] font-medium text-[#03071280]">E4</button>
                             </div>
                             <!-- row 6 -->
                             <p class="col-span-1 text-[18px] font-medium text-[#03071280]">F</p>
                             <div class="col-span-11 grid grid-cols-10 gap-16 items-center text-center">
-                                <button
+                                <button onclick="showSeat(this)"
                                     class="col-span-2 btn btn-md hover:bg-neutral-500 hover:text-white transition-colors duration-200 ease-in-out bg-[#0307121A] flex items-center justify-center rounded-xl px-16 py-4 text-[18px] font-medium text-[#03071280]">F1</button>
-                                <button
+                                <button onclick="showSeat(this)"
                                     class="col-span-2 btn btn-md hover:bg-neutral-500 hover:text-white transition-colors duration-200 ease-in-out bg-[#0307121A] flex items-center justify-center rounded-xl px-16 py-4 text-[18px] font-medium text-[#03071280]">F2</button>
                                 <p class="col-span-1"></p>
-                                <button
+                                <button onclick="showSeat(this)"
                                     class="col-span-2 btn  v hover:text-white transition-colors duration-200 ease-in-out bg-[#0307121A] flex items-center justify-center rounded-xl px-16 py-4 text-[18px] font-medium text-[#03071280]">F3</button>
-                                <button
+                                <button onclick="showSeat(this)"
                                     class="col-span-2 btn btn-md hover:bg-neutral-500 hover:text-white transition-colors duration-200 ease-in-out bg-[#0307121A] flex items-center justify-center rounded-xl px-16 py-4 text-[18px] font-medium text-[#03071280]">F4</button>
                             </div>
                             <!-- row 7 -->
                             <p class="col-span-1 text-[18px] font-medium text-[#03071280]">G</p>
                             <div class="col-span-11 grid grid-cols-10 gap-16 items-center text-center">
-                                <button
+                                <button onclick="showSeat(this)"
                                     class="col-span-2 btn btn-md hover:bg-neutral-500 hover:text-white transition-colors duration-200 ease-in-out bg-[#0307121A] flex items-center justify-center rounded-xl px-16 py-4 text-[18px] font-medium text-[#03071280]">G1</button>
-                                <button
+                                <button onclick="showSeat(this)"
                                     class="col-span-2 btn btn-md hover:bg-neutral-500 hover:text-white transition-colors duration-200 ease-in-out bg-[#0307121A] flex items-center justify-center rounded-xl px-16 py-4 text-[18px] font-medium text-[#03071280]">G2</button>
                                 <p class="col-span-1"></p>
-                                <button
+                                <button onclick="showSeat(this)"
                                     class="col-span-2 btn  hover:bg-neutral-500 hover:text-white transition-colors duration-200 ease-in-out bg-[#0307121A] flex items-center justify-center rounded-xl px-16 py-4 text-[18px] font-medium text-[#03071280]">G3</button>
-                                <button
+                                <button onclick="showSeat(this)"
                                     class="col-span-2 btn btn-md hover:bg-neutral-500 hover:text-white transition-colors duration-200 ease-in-out bg-[#0307121A] flex items-center justify-center rounded-xl px-16 py-4 text-[18px] font-medium text-[#03071280]">G4</button>
                             </div>
                             <!-- row 8 -->
                             <p class="col-span-1 text-[18px] font-medium text-[#03071280]">H</p>
                             <div class="col-span-11 grid grid-cols-10 gap-16 items-center text-center">
-                                <button
+                                <button onclick="showSeat(this)"
                                     class="col-span-2 btn btn-md hover:bg-neutral-500 hover:text-white transition-colors duration-200 ease-in-out bg-[#0307121A] flex items-center justify-center rounded-xl px-16 py-4 text-[18px] font-medium text-[#03071280]">H1</button>
-                                <button
+                                <button onclick="showSeat(this)"
                                     class="col-span-2 btn btn-md hover:bg-neutral-500 hover:text-white transition-colors duration-200 ease-in-out bg-[#0307121A] flex items-center justify-center rounded-xl px-16 py-4 text-[18px] font-medium text-[#03071280]">H2</button>
                                 <p class="col-span-1"></p>
-                                <button
+                                <button onclick="showSeat(this)"
                                     class="col-span-2 btn  hover:bg-neutral-500 hover:text-white transition-colors duration-200 ease-in-out bg-[#0307121A] flex items-center justify-center rounded-xl px-16 py-4 text-[18px] font-medium text-[#03071280]">H3</button>
-                                <button
+                                <button onclick="showSeat(this)"
                                     class="col-span-2 btn btn-md hover:bg-neutral-500 hover:text-white transition-colors duration-200 ease-in-out bg-[#0307121A] flex items-center justify-center rounded-xl px-16 py-4 text-[18px] font-medium text-[#03071280]">H4</button>
                             </div>
                             <!-- row 9 -->
                             <p class="col-span-1 text-[18px] font-medium text-[#03071280]">I</p>
                             <div class="col-span-11 grid grid-cols-10 gap-16 items-center text-center">
-                                <button
+                                <button onclick="showSeat(this)"
                                     class="col-span-2 btn btn-md hover:bg-neutral-500 hover:text-white transition-colors duration-200 ease-in-out bg-[#0307121A] flex items-center justify-center rounded-xl px-16 py-4 text-[18px] font-medium text-[#03071280]">I1</button>
-                                <button
+                                <button onclick="showSeat(this)"
                                     class="col-span-2 btn btn-md hover:bg-neutral-500 hover:text-white transition-colors duration-200 ease-in-out bg-[#0307121A] flex items-center justify-center rounded-xl px-16 py-4 text-[18px] font-medium text-[#03071280]">I2</button>
                                 <p class="col-span-1"></p>
-                                <button
+                                <button onclick="showSeat(this)"
                                     class="col-span-2 btn  hover:bg-neutral-500 hover:text-white transition-colors duration-200 ease-in-out bg-[#0307121A] flex items-center justify-center rounded-xl px-16 py-4 text-[18px] font-medium text-[#03071280]">I3</button>
-                                <button
+                                <button onclick="showSeat(this)"
                                     class="col-span-2 btn btn-md hover:bg-neutral-500 hover:text-white transition-colors duration-200 ease-in-out bg-[#0307121A] flex items-center justify-center rounded-xl px-16 py-4 text-[18px] font-medium text-[#03071280]">I4</button>
                             </div>
                             <!-- row 10 -->
                             <p class="col-span-1 text-[18px] font-medium text-[#03071280]">J</p>
                             <div class="col-span-11 grid grid-cols-10 gap-16 items-center text-center">
-                                <button
+                                <button onclick="showSeat(this)"
                                     class="col-span-2 btn btn-md hover:bg-neutral-500 hover:text-white transition-colors duration-200 ease-in-out bg-[#0307121A] flex items-center justify-center rounded-xl px-16 py-4 text-[18px] font-medium text-[#03071280]">J1</button>
-                                <button
+                                <button onclick="showSeat(this)"
                                     class="col-span-2 btn btn-md hover:bg-neutral-500 hover:text-white transition-colors duration-200 ease-in-out bg-[#0307121A] flex items-center justify-center rounded-xl px-16 py-4 text-[18px] font-medium text-[#03071280]">J2</button>
                                 <p class="col-span-1"></p>
-                                <button
+                                <button onclick="showSeat(this)"
                                     class="col-span-2 btn  hover:bg-neutral-500 hover:text-white transition-colors duration-200 ease-in-out bg-[#0307121A] flex items-center justify-center rounded-xl px-16 py-4 text-[18px] font-medium text-[#03071280]">J3</button>
-                                <button
+                                <button onclick="showSeat(this)"
                                     class="col-span-2 btn btn-md hover:bg-neutral-500 hover:text-white transition-colors duration-200 ease-in-out bg-[#0307121A] flex items-center justify-center rounded-xl px-16 py-4 text-[18px] font-medium text-[#03071280]">J4</button>
                             </div>
                         </section>
@@ -409,28 +409,37 @@
                         <div class="border-dashed border border-[#03071233] mt-6"></div>
                         <div class="bg-[#F7F8F8] px-8 py-8 rounded-xl font-inter mt-8">
                             <div class="flex justify-between font-medium text-[#030712]">
-                                <p>Seat <span>0</span></p>
+                                <p>Seat <span id="seat_length" class="bg-[#1DD100] text-white rounded-full font-extrabold p-1">0</span></p>
                                 <p>Class</p>
                                 <p>Price</p>
                             </div>
                             <div class="border-dashed border border-[#03071233] mt-6"></div>
-                            <div id=""></div>
-                            <div class="border border-solid mt-10"></div>
+
+
+                            <div id="blocked" class="text-3xl font-bold text-red-300 mt-3">
+                               No Seat Blockted
+                            </div>
+
+                            <div id="seat_add" class="text-3xl font-bold text-red-300 mt-3">
+                            </div>
+
+
+                            <div class="border border-solid mt-6"></div>
                             <div class="flex justify-between mt-4">
                                 <p class="font-medium text-[#030712]">Total Price</p>
-                                <p class="font-medium text-[#030712]">BDT <span>0</span></p>
+                                <p class="font-medium text-[#030712]">BDT <span id="current_amount">0.00</span></p>
                             </div>
                             <div>
-                                <label class="input input-bordered flex items-center gap-2 mt-8">
-                                    <input type="text" disabled class="grow relative "
+                                <div id="coupon_field_value" class=" flex  items-center gap-2 mt-8">
+                                    <input id="coupon_field_input" type="text" disabled class="grow py-5 px-5 rounded-xl relative "
                                         placeholder="Have any copupon?" />
-                                    <button
-                                        class="bg-[#1DD100] font-semibold absolute text-white hover:bg-[#1DD10026] hover:text-[#1DD100] px-4 py-2 rounded-lg translate-x-[195px]">Apply</button>
-                                </label>
+                                    <button id="coupon_apply"
+                                        class="bg-[#1DD100] font-semibold absolute text-white hover:bg-[#1DD10026] hover:text-[#1DD100] px-4 py-2 rounded-lg translate-x-[195px]" disabled >Apply</button>
+                                </div>
                             </div>
                             <div class="flex justify-between mt-8">
                                 <p class="font-medium text-[#030712]">Grand Total</p>
-                                <p class="font-medium text-[#030712]">BDT <span>0</span></p>
+                                <p class="font-medium text-[#030712]">BDT <span id="coupon_amount">0.00</span></p>
                             </div>
 
                         </div>
@@ -443,25 +452,26 @@
                                     <label class="label">
                                         <span class="font-semibold">Passenger Name*</span>
                                     </label>
-                                    <input type="text" placeholder="Enter your name" class="input input-bordered"
+                                    <input id="passenger_name" disabled type="text" name="username" placeholder="Enter your name" class="input input-bordered"
                                         required />
                                 </div>
                                 <div class="form-control">
                                     <label class="label">
                                         <span class="font-semibold">Phone Number*</span>
                                     </label>
-                                    <input type="text" placeholder="Enter your phone number"
+                                    <input id="phone_number" disabled type="text" name="phone" placeholder="Enter your phone number"
                                         class="input input-bordered" required />
                                 </div>
                                 <div class="form-control">
                                     <label class="label">
                                         <span class="font-semibold">Email ID</span>
                                     </label>
-                                    <input type="email" placeholder="Enter your email id" class="input input-bordered"
+                                    <input id="email_id" disabled type="email" name="email" placeholder="Enter your email id (Optional)" class="input input-bordered"
                                         required />
                                 </div>
                                 <div class="form-control mt-6">
-                                    <button class="btn bg-[#1DD100] text-white hover:bg-[#1DD10026] hover:text-[#1DD100] font-raleway text-xl" onclick="my_modal_1.showModal()">Next</button>
+                                    <button id="next_btn" onclick="my_modal_1.showModal()" disabled class="btn bg-[#1DD100] text-white hover:bg-[#1DD10026] hover:text-[#1DD100] font-raleway text-xl" >Next</button>
+                                    
                                 </div>
                                 <div class="flex items-center justify-between mt-6">
                                     <a class="underline" href="">Terms and Conditions</a>
@@ -479,13 +489,13 @@
                     <div class="">
                         <section class="bg-white px-20 py-12 font-roboto  w-[700px] h-[500px] rounded-2xl flex flex-col justify-center items-center text-center">
                             <img src="./images/success.png" alt="">
-                            <h3 class="text-2xl font-bold text-[#27AE60] mt-10">SUCCESS</h3>
+                            <h3 class="text-2xl font-bold text-[#27AE60] mt-10">Congratulation</h3>
                             <p class="font-semibold text-xl text-[#4A4A4A] mt-10">Thank you for Booking Our Bus Seats. <br> 
                                 We are working hard to find the best service and deals for you.</p>
                                 <p class="text-xl text-[#4A4A4A] mt-4">Shortly you will find a confirmation in your email.</p>
                                 <form method="dialog">
                                     <!-- if there is a button in form, it will close the modal -->
-                                    <button class=" text-white text-xl font-semibold mt-9 bg-[#27AE60] rounded-[32px] px-24 py-4">Continue</button>
+                                    <button id="continue_btn" class=" text-white text-xl font-semibold mt-9 bg-[#27AE60] rounded-[32px] px-24 py-4">Continue</button>
                                 </form>
                         </section>
                             
